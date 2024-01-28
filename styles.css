@@ -1,0 +1,625 @@
+
+body,html {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+.header{
+    display: flex;
+    width: 100%;
+    height: 6.563vw;
+    position: fixed;
+    background-color:#2B2B2B;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    font-family: Arial;
+    z-index: 10;
+}
+.header.scrolled{
+    opacity: 0.9;
+}
+.nav{
+    width: 76.563vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center; 
+       
+}
+.Rbuttons{
+    display: flex;
+}
+.Rbuttons ul{
+    list-style: none;
+    float: left;
+    display: flex;
+    align-items: center;
+    width: 31.25vw;
+    justify-content: space-between;
+}
+
+.Rbuttons ul li a{
+    text-align: right;
+    line-height: 2.031vw;
+    text-decoration: none;
+    transition: 0.4s ease-in-out;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.Rbuttons ul li a:hover{
+    color: #00AEF0;
+}
+
+.mainbutton{
+    width: 15.625vw;
+    border: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    height: 6.563vw;
+    align-items: center;
+    cursor: pointer;
+}
+.tbclogo1{
+    width: 4.688vw;
+    height: 4.688vw;
+}
+.mainbutton h3{
+    color: #fff;
+    font-size: 1.563vw;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.section1 {
+    margin-top: 6.563vw;
+    width: 76.563vw;
+    height: 27.5vw;
+    justify-content: center;
+    align-self: center;
+}
+.imgbox {
+    width: 100%;
+    position: absolute;
+    margin-top: 6.563vw;
+    z-index: -10;
+}
+.img {
+    width: 100%;
+    height: 27.5vw;
+}
+.textonimg{
+    width: 76.563vw;
+    margin-top: 7.031vw;
+    align-self: center;
+}
+.textonimg h1{
+    font-size: 3.281vw;
+    color: #f4f4f4;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+}
+.textonimg h2{
+    font-size: 2.656vw;
+    color: #f4f4f4;
+    line-height: 1.6em;
+}
+.infoDiv {
+    width: 100%;
+    background-color: #2B2B2B;
+    display: flex;
+    padding-top: 2.344vw;
+    flex-direction: column;
+    justify-content: center;
+}
+.info{
+    width: 76.563vw;
+    align-self: center;
+    color: #f4f4f4;
+    font-size: 2.188vw;
+    line-height: 1.6em;
+    letter-spacing: 0.05cap;
+    font-weight: 500;
+}
+.more{
+    width: 76.563vw;
+    align-self: center;
+    color: #00AEF3;
+    text-decoration: none;
+    transition: 0.2s ease;
+    text-align: initial;
+    font-size: 1.719vw;
+    font-weight: 900;
+    margin-bottom: 4.688vw;
+}
+.more:hover{
+    color: gray;
+}
+.courses{
+    background-color: #161616;
+    width: 100%;
+    height: 116.016vw; 
+    display: flex;
+    flex-direction: column;
+   
+}
+.courses h3{
+    color: #DBDBDB;
+    margin-left: 11.234vw;
+    letter-spacing: 0.12cap;
+    line-height: 1.5em;
+    font-size: 1.875vw;
+    font-weight: 400;
+}
+.courses ul{
+    width: 76.563vw;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    gap: 0.781vw;
+}
+.courses ul li{
+    border: 0.078vw solid #ccc;
+    border-width: 0.078vw;
+    height: 32.344vw;
+    width: 23.438vw;
+    border-radius: 0.391vw;
+    text-align: left;
+}
+.courses ul li img{
+    margin: 0, 0, 0 15;
+    height: 11.719vw;
+    width: 23.438vw;
+    border-radius: 0.391vw;
+}
+.courses ul li h4{
+    margin-top: 2.344vw;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.406vw;
+    margin-left: 1.563vw;
+}
+.courses ul li h5{
+    color: #fff;
+    margin-top: 1.953vw;
+    font-weight: 300;
+    font-size: 1.094vw;
+    margin-left: 1.563vw;
+}
+.courses ul li button{
+    color: #00AEF3;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    margin-top: auto;
+    font-size: 1.25vw;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+
+.courses ul li button:hover{
+    color: skyblue;
+}
+.courses ul li span{
+    color: #00AEF3;
+    margin-left: 1.563vw;
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 2.656vw;
+    height: 28.438vw;
+    align-content: center;
+    background-color: #2B2B2B;
+}
+
+.slider-container h1 {
+    font-size: 1.875vw;
+    color: rgb(244, 244, 244);
+    font-weight: 100;
+    width: 76.563vw;
+    margin: 0 auto;
+}
+
+.slider {
+    width: 76.563vw;
+    margin: 0 auto;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 17.5vw;
+    margin-top: 2.422vw;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 33.33%;
+    box-sizing: border-box;
+    padding: 0 0.781vw;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slide img {
+    width: 19.531vw;
+    height: 6.25vw;
+    margin: 0 auto;
+}
+
+.controls {
+    position: absolute;
+    top: 45%;
+    width: 80%;
+     margin: 0 10% 0 10%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev, .next {
+    width: 1.406vw;
+    height: 2.734vw;
+    font-size: 2.734vw;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    color: darkgray;
+}
+
+.questions{
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.introtoquestions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 76.563vw;
+    font-size: 1.875vw;
+    margin-top: 4.688vw;
+}
+
+.introtoquestions h3{
+    color: #fff;
+    line-height: 2.188vw;
+    font-weight: 400;
+    font-size: 1.875vw;
+}
+
+.oftenquestions{
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 76.563vw;
+    background: transparent;
+    min-height: 29.453vw;
+   
+}
+.oftenquestions hr {
+    width: 100%;
+}
+
+.oftenquestions button{
+    display: flex;
+    justify-content: space-between;
+    width: 76.563vw;
+    font-size: 1.406vw;
+    font-weight: 400;
+    min-height: 6.25vw;
+    border: 0;
+    color: #f4f4f4;
+    float: left;
+    text-align: left;
+    align-items: center;
+}
+
+.oftenquestions hr{
+    opacity: 0.25;
+}
+
+.oftenquestions p{
+    display: none;
+    font-size: 1.094vw;
+    line-height: 2.188vw;
+}
+
+.oftenquestions p span{
+    font-weight: bold;
+}
+
+.allquestions{
+    color: rgb(0, 174, 243);
+    cursor: pointer;
+    border: 0;
+    font-weight: 54.688vw;
+    line-height: 1.875vw;
+    font-size: 1.563vw;
+    background: transparent;
+    transition: 0.4s ease;
+    max-width: 11.875vw;
+}
+
+.allquestions:hover{
+    color: grey;
+}
+
+.asked{
+    background: transparent;
+    cursor: pointer;
+}
+
+.hide {
+    font-size: 1.563vw;
+    color: white;
+    display: none;
+}
+
+.footercontainer{
+    background-color: #2B2B2B;
+    height: 17.813vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.footer{
+    width: 76.563vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tbc{
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.563vw;
+}
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.tbclogo2{
+    width: 3.125vw;
+    height: 3.125vw;
+}
+.fbicon{
+    width: 3.125vw;
+    height: 3.125vw;
+    border: none;
+    margin-right: 0.781vw;
+}
+.youtubeicon{
+    width: 3.125vw;
+    height: 3.125vw;
+    border: none;
+}
+.rules{
+    color: #ffffff;
+}
+.terms{
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+.terms:hover{
+    color: grey;
+}
+.contact{
+    margin-top: 2.344vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.chat{
+    background-color: #00AEF3;
+    color: #ffffff;
+    border: none;
+    transition: 0.4s ease-in-out;
+    width: 12.656vw;
+    height: 3.125vw;
+    border-radius: 0.469vw;    
+    cursor: pointer;
+    line-height: 1.953vw;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-size: 1.25vw;
+    transition: color 0.4s ease, background-color 0.4s ease;
+    margin-bottom: 2.344vw;
+}
+.chat:hover{
+    background-color: gray;
+    color: #2B2B2B;
+}
+
+.footerResponsive{
+    display: none;
+}
+
+
+.navigation{
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 980px) {
+    .Rbuttons{
+        display: none;
+    }
+   .navigation{
+    display: flex;
+    background:rgb(0, 174, 243);
+    color: #161616;
+    width: 10.156vw;
+    height: 2.734vw;
+    border: 0;
+    border-radius: 0.313vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.563vw;
+   }
+   .footer{
+    display: none;
+   }
+   .courses{
+    height: 360.016vw;
+   }
+   .courses ul li{
+    width: 100%;
+    margin-top: 5vw;
+   }
+   .courses ul li img{
+    width: 100%;
+    height: 34%;
+   }
+   .courses ul li h4{
+    font-size: 1.9vw;
+   }
+   .courses ul li h5{
+    font-size: 1.5vw;
+   }
+   .slide {
+    flex-direction: column;
+   }   
+   .slide img {
+    width: 19.531vw;
+    height: 6.25vw;
+    margin: 0 auto;
+    width: 50%;
+   }
+  
+   .slider-container{
+    height: 35.438vw;
+   }
+  
+   .details{
+    font-size: 1.6vw;
+   }
+   .controls{
+    display: none;
+   }
+   .footer h4{
+    font-size: 1.9vw;
+   }
+   .footer h5{
+    font-size: 1.6vw;
+   }
+   .icons{
+    margin-top: 2vw;
+   }
+   .footerResponsive {
+    width: 100%;
+    background-color:#202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2vw;
+}
+
+.footerChat {
+    max-width: 76.563vw;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.781vw;
+    align-items: center;
+    margin-top: 3vw;
+}
+.footerChat section {
+    width: 6.875vw;
+    display: flex;
+    justify-content: space-between;
+}
+.tbcFooter{
+    max-width: 76.563vw;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-top: 2vw;
+}
+.tbcFooter img {
+    width: 3.125vw;
+    height: 3.125vw;
+}
+
+.footerResponsive h5{
+    font-size: 1.094vw;
+    max-width: 76.563vw;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    color: #f4f4f4;
+    line-height: 1.6em;
+    font-weight: 100;
+}
+
+.footerResponsive a {
+    max-width: 76.563vw;
+    width: 100%;
+    align-self: center;
+    display: flex;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.094vw;
+    line-height: 1.6em;
+    font-weight: 100;
+    transition: color 0.3s ease;
+    margin-top: 3vw;
+}
+
+.chatResponsive {
+    cursor: pointer;
+    width: 12.656vw;
+    height: 3.047vw;
+    background-color: #00AEF3;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.625vw;
+    transition: back-ground 0.3s ease;
+}
+
+.footerResponsive button p {
+    color: #FFFFFF;
+    font-size: 1.25vw;
+    transition: color 0.3s ease;
+}
+}
